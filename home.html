@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #EDE3D4;
+        }
+        .top-row {
+            background-color: #576A58;
+            height: 50px;
+        }
+        .nav-row {
+            background-color: #827C7C;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-row a {
+            margin: 0 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #576A58;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .nav-row a:hover {
+            background-color: #6B8E7D; /* Slightly lighter shade on hover */
+            transform: scale(1.1); /* Add a slight zoom effect on hover */
+        }
+        .nav-row a.active {
+            background-color: #3C4A41; /* Different color for the active page */
+            pointer-events: none; /* Makes the active link unclickable */
+            cursor: default;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .home-content {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: #576A58;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-row"></div>
+    <div class="nav-row">
+        <a href="home.html" class="active">Home</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="activities.html">Activities</a>
+        <a href="cuisine.html">Cuisine</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+    <div class="content">
+        <div class="home-content">
+            <h1>Welcome to Taniti – Your Pacific Paradise</h1>
+            <p>
+                Discover the charm of Taniti, a tropical island rich in natural beauty and cultural heritage. 
+                From its pristine white sandy beaches and lush rainforests to the breathtaking volcanic landscapes, 
+                Taniti offers an unforgettable getaway. Whether you’re looking to explore, relax, or indulge in unique culinary delights, 
+                our island has something for everyone. Start planning your adventure today!
+            </p>
+        </div>
+        <div class="image-row">
+            <div class="image-box">
+                <img src="img/island 1.jpg" alt="Island 1">
+            </div>
+            <div class="image-box">
+                <img src="img/island 2.jpg" alt="Island 2">
+            </div>
+            <div class="image-box">
+                <img src="img/island 3.jpg" alt="Island 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

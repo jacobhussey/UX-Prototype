@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #EDE3D4;
+        }
+        .top-row {
+            background-color: #576A58;
+            height: 50px;
+        }
+        .nav-row {
+            background-color: #827C7C;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-row a {
+            margin: 0 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #576A58;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .nav-row a:hover {
+            background-color: #6B8E7D; /* Slightly lighter shade on hover */
+            transform: scale(1.1); /* Add a slight zoom effect on hover */
+        }
+        .nav-row a.active {
+            background-color: #3C4A41; /* Different color for the active page */
+            pointer-events: none; /* Makes the active link unclickable */
+            cursor: default;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .restaurant-content {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: #576A58;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-row"></div>
+    <div class="nav-row">
+        <a href="home.html">Home</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="activities.html">Activities</a>
+        <a href="cuisine.html" class="active">Cuisine</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+    <div class="content">
+        <div class="restaurant-content">
+            <h1>Savor the Flavors of Taniti</h1>
+            <p>
+                Taniti’s culinary scene is as diverse as its landscapes! Delight your taste buds with freshly caught fish 
+                and locally grown rice at one of our five local cuisine-focused restaurants. Experience the island's rich cultural flavors 
+                brought to life by local chefs who take pride in showcasing the freshest ingredients and traditional recipes.
+            </p>
+            <p>
+                If you’re craving something familiar, enjoy hearty American-style meals at one of our three diners. 
+                For a fusion experience, try the Pan-Asian dishes at two standout eateries. Whether you’re dining in a fine restaurant or 
+                grabbing groceries from one of our supermarkets, Taniti is sure to impress food lovers from around the globe.
+            </p>
+        </div>
+        <div class="image-row">
+            <div class="image-box">
+                <img src="img/restaurant 1.jpg" alt="Restaurant 1">
+            </div>
+            <div class="image-box">
+                <img src="img/restaurant 2.jpg" alt="Restaurant 2">
+            </div>
+            <div class="image-box">
+                <img src="img/restaurant 3.jpg" alt="Restaurant 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

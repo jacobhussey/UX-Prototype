@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities Page</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #EDE3D4;
+            font-family: Arial, sans-serif;
+            color: #576A58;
+        }
+        .top-row {
+            background-color: #576A58;
+            height: 50px;
+        }
+        .nav-row {
+            background-color: #827C7C;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-row a {
+            margin: 0 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #576A58;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .nav-row a:hover {
+            background-color: #6B8E7D; /* Slightly lighter shade on hover */
+            transform: scale(1.1); /* Add a slight zoom effect on hover */
+        }
+        .nav-row a.active {
+            background-color: #3C4A41; /* Different color for the active page */
+            pointer-events: none; /* Makes the active link unclickable */
+            cursor: default;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        aside {
+            width: 25%;
+            background-color: #d0cfcf;
+            padding: 15px;
+            border-right: 2px solid #827C7C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        aside img {
+            margin-top: 20px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .content {
+            width: 75%;
+            padding-left: 20px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .image-box {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-row"></div>
+    <div class="nav-row">
+        <a href="home.html">Home</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="activities.html" class="active">Activities</a>
+        <a href="cuisine.html">Cuisine</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+    <div class="main">
+        <aside>
+            <h2>Volcano Adventures</h2>
+            <img src="img/volcano.jpg" alt="Volcano">
+        </aside>
+        <div class="content">
+            <h1>Explore Taniti’s Adventures</h1>
+            <p>
+                Taniti offers endless activities for adventurers and leisure seekers alike. Enjoy the stunning natural wonders of the island, 
+                from its white sandy beaches to the lush rainforests. Take a hike up our active volcano for breathtaking views, or dive into 
+                the vibrant underwater world through snorkeling and chartered fishing tours.
+            </p>
+            <p>
+                For thrill-seekers, zip-lining through the rainforest or taking helicopter rides provide adrenaline-filled experiences. 
+                Those interested in cultural and leisurely pursuits can explore local art galleries, the history museum, pubs, and even a 
+                new dance club. Taniti truly has something for everyone, whether you’re looking for excitement or relaxation.
+            </p>
+            <div class="image-row">
+                <div class="image-box">
+                    <img src="img/activity 1.jpg" alt="Activity 1">
+                </div>
+                <div class="image-box">
+                    <img src="img/activity 2.jpg" alt="Activity 2">
+                </div>
+                <div class="image-box">
+                    <img src="img/activity 3.jpg" alt="Activity 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
